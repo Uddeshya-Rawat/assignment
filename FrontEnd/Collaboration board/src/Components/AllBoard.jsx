@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import CreateBoard from './CreateBoard';
 
 const AllBoards = () => {
   const [boards, setBoards] = useState([]);
@@ -24,6 +25,7 @@ const AllBoards = () => {
 
   return (
     <div className="p-6">
+        <CreateBoard/>
       <h2 className="text-3xl font-bold text-white mb-4"> All Boards</h2>
 
       {loading ? (
@@ -36,7 +38,7 @@ const AllBoards = () => {
             <div
               key={board._id}
               className="bg-[#1e293b] text-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all"
-              onClick={()=>navigate(`/board${board._id}`)}
+              onClick={()=>navigate(`/board/${board._id}`)}
             >
               <h3 className="text-xl font-semibold mb-1">{board.name}</h3>
               <p className="text-sm text-gray-400">

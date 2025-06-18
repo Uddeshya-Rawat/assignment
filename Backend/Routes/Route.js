@@ -69,9 +69,9 @@ router.post("/createTask", async (req,res)=>{
 })
 
 
-router.get('/getTasks', async (req,res)=>{
-    try{
-        const tasks=await Task.find()
+router.post('/getTasks', async (req,res)=>{
+    try{  const {boardId}= req.body
+        const tasks=await Task.find({boardId})
         res.status(200).send(tasks)
 
 

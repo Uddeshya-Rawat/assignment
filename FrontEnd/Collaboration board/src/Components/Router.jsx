@@ -9,18 +9,18 @@ import BoardDetail from './BoardDetail';
 const AppRouter = createBrowserRouter([
   {
     path: '/',
-    element: <App/>, // Optional layout wrapper (nav/sidebar)
+    element: <App/>,
     children: [
       {
         path: '/',
         element: <AllBoard/>
       },
       {
-        path: 'create',
+        path: '/create',
         element: <CreateBoard/>
       },
       {
-        path: 'board/:id',
+        path: '/board/:id',
         element: <BoardDetail/>
       }
     ]

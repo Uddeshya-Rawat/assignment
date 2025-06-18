@@ -1,6 +1,6 @@
 
-import CreateBoard from './Components/CreateBoard'
-import AllBoards from './Components/AllBoard'
+import { Outlet } from 'react-router-dom';
+
 
 
 
@@ -9,8 +9,9 @@ function App() {
 
   return (
     <>
-   <CreateBoard/>
-   <AllBoards/>
+   <div>
+      <Outlet /> 
+    </div>
     
     </>
   )
