@@ -55,27 +55,7 @@ npm run dev
 
 
 
-### Folder structure
 
-```markdown
-Backend/
-  └── models/
-      └── Board.js
-      └── Task.js
-  └── routes/
-      └── boardRoutes.js
-      └── taskRoutes.js
-  └── index.js
- Frontend/
-  └── components/
-      └── AllBoards.jsx
-      └── CreateBoard.jsx
-      └── BoardDetail.jsx
-  └── App.jsx
-  └── main.jsx
-  └── AppRouter.jsx
-
-  ```
 
 
 
